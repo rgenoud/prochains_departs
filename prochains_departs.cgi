@@ -51,6 +51,9 @@ case $gare in
 	villefranche)
 		gid=OCE87721332
 		;;
+	stetienne)
+		gid=OCE87726000
+		;;
 	*)
 		exit_erreur;
 		;;
