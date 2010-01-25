@@ -2,8 +2,6 @@
 echo "Content-Type: text/html; charset=utf-8"
 echo ""
 
-gare="Lyon Part Dieu"
-
 date=`date "+%Y;%m;%d"`
 heure=`date "+%H;%M"`
 nb=30
@@ -18,7 +16,7 @@ for param in $params; do
 		eval "p$nparams=$i"
 	done
 done
-station=$p2
+station=`echo $p2 | sed -e 's/%\([0-9A-F][0-9A-F]\)/\\\\\\\x\1/g' | xargs echo -e`
 gid=$p4
 nb=$p6
 
@@ -38,11 +36,11 @@ exit_erreur() {
 
 echo "<html>"
 echo "<head>"
-echo "<title>Prochains Departs $gare</title>"
+echo "<title>Prochains Departs $station</title>"
 echo '<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">'
 echo "</head>"
 echo "<body>"
-echo "<center>Prochains Departs $gare<br/><br/></center>"
+echo "<center>Prochains Departs $station<br/><br/></center>"
 echo "<table><tr><td>"
 wget -q -O- "http://aln.canaltp.fr/dev/index.php?gare=$gid&nbredepart=$nb&datedepart=$date&heuredep=$heure&modedep=1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1&alea=1262617546333&numafficheur=0" | \
 sed -e "s@^.*\&ligne0@\&ligne0@" \
