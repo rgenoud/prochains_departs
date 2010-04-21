@@ -3,10 +3,9 @@ This is just a quick and *dirty* code to get faster informations on french train
 It mimics the widget "prochains departs" that is not available for linux (and doesn't run with wine)
 
 To add your own train station, use this little script:
-wget -O- http://aln.canaltp.fr/dev/gare.php?txtrech=lyon 2>/dev/null ; echo
-
+wget -O- http://widget.canaltp.fr/Prochains_departs_15122009/dev/gare.php?txtrech=lyon 2>/dev/null ; echo
 
 And the 1st thing that the widget was doing is that:
-wget -O- http://aln.canaltp.fr//dev/param.php?numafficheur=0 2>/dev/null ; echo
+wget -O- http://widget.canaltp.fr/Prochains_departs_15122009/dev/param.php?numafficheur=0 2>/dev/null ; echo
 (but we don't care in our case)
 
