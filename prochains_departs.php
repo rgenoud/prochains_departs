@@ -93,20 +93,6 @@ if (empty($gid)) {
 	echo "$output\n";
 	echo "</td></tr>\n</table>\n";
 }
-/*
-echo "<!-- Piwik -->"
-echo "<script type="text/javascript">"
-echo "var pkBaseURL = (("https:" == document.location.protocol) ? "https://127.0.0.1/piwik/" : "http://127.0.0.1/piwik/");"
-echo "document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));"
-echo "</script><script type="text/javascript">"
-echo "try {"
-echo "var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);"
-echo "piwikTracker.trackPageView();"
-echo "piwikTracker.enableLinkTracking();"
-echo "} catch( err ) {}"
-echo "</script><noscript><p><img src="http://127.0.0.1/piwik/piwik.php?idsite=1" style="border:0" alt=""/></p></noscript>"
-echo "<!-- End Piwik Tag -->"
- */
 ?>
 </body>
 </html>
