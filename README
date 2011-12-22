@@ -15,3 +15,7 @@ another source :
 http://horaires-ter-sncf.naholyr.fr
 http://horaires-ter-sncf.naholyr.fr/v3/prochainsdeparts.php
 http://horaires-ter-sncf.naholyr.fr/v3/train.php
+it uses ter-mobile.fr:
+ex:
+POST request : curl -d "idxGare=5912&codeUIC=87721332&idxNombre=8" http://www.termobile.fr/rechercherRPD.do
+
