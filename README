@@ -9,3 +9,4 @@ And the 1st thing that the widget was doing is that:
 wget -O- http://widget.canaltp.fr/Prochains_departs_15122009/dev/param.php?numafficheur=0 2>/dev/null ; echo
 (but we don't care in our case)
 
+you will need php and php-curl packages.
