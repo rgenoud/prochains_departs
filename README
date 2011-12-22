@@ -10,3 +10,8 @@ wget -O- http://widget.canaltp.fr/Prochains_departs_15122009/dev/param.php?numaf
 (but we don't care in our case)
 
 you will need php and php-curl packages.
+
+another source :
+http://horaires-ter-sncf.naholyr.fr
+http://horaires-ter-sncf.naholyr.fr/v3/prochainsdeparts.php
+http://horaires-ter-sncf.naholyr.fr/v3/train.php
