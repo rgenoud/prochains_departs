@@ -1,3 +1,6 @@
+EDIT : The web site has been shut down by SNCF,
+now, you should use http://www.ter-sncf.mobi/
+
 This is just a quick and *dirty* code to get faster informations on french trains departures.
 (It's often faster than www.gares-en-mouvement.com).
 It mimics the widget "prochains departs" that is not available for linux (and doesn't run with wine)
